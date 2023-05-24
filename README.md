@@ -1,4 +1,7 @@
 ## Retarus Java Fax SDK
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.retarus.fax/retarus-java-fax/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.retarus.fax/retarus-java-fax)
+<br>[![Tests](https://github.com/retarus/retarus-java-fax/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/retarus/retarus-java-fax/blob/main/.github/workflows/build-and-test.yml)
+
 The official Java Fax SDK provided by Retarus GmbH to contact our messaging services.
 Retarus Faxolution for Applications Webservice SDK facilitates automation of the fax transmission process.
 <br>In addition, it also allows you to monitor the status of a sent fax and delete archived reports.
