@@ -1,7 +1,5 @@
 package com.retarus.fax.base.sendfax;
 
-import com.retarus.fax.base.sendfax.Charset;
-import com.retarus.fax.base.sendfax.Document;
 import com.retarus.fax.exception.ApiException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

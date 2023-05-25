@@ -1,7 +1,5 @@
 package com.retarus.fax.base.sendfax.rendering;
 
-import com.retarus.fax.base.sendfax.rendering.Overlay;
-import com.retarus.fax.base.sendfax.rendering.OverlayMode;
 import com.retarus.fax.exception.ApiException;
 import org.junit.jupiter.api.Test;
 
@@ -49,9 +47,11 @@ class OverlayTest {
         Overlay overlay2 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.NO_OVERLAY).build();
         Overlay overlay3 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.FIRST_PAGE).build();
         Overlay overlay4 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.LAST_PAGE).build();
-        Overlay overlay5 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.ALL_BUT_FIRST_PAGE).build();
+        Overlay overlay5 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.ALL_BUT_FIRST_PAGE)
+                .build();
         Overlay overlay6 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.ALL_BUT_LAST_PAGE).build();
-        Overlay overlay7 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.ALL_BUT_FIRST_AND_LAST_PAGE).build();
+        Overlay overlay7 = Overlay.builder().overlayName("template")
+                .overlayMode(OverlayMode.ALL_BUT_FIRST_AND_LAST_PAGE).build();
         Overlay overlay8 = Overlay.builder().overlayName("template").overlayMode(OverlayMode.FIRST_FILE).build();
 
         assertEquals(OverlayMode.ALL_PAGES, overlay1.getOverlayMode());

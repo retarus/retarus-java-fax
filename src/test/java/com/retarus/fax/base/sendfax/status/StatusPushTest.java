@@ -1,7 +1,5 @@
 package com.retarus.fax.base.sendfax.status;
 
-import com.retarus.fax.base.sendfax.status.AuthenticationMethod;
-import com.retarus.fax.base.sendfax.status.StatusPush;
 import com.retarus.fax.exception.ApiException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -74,8 +72,8 @@ class StatusPushTest {
                 .build();
 
         assertEquals("https://example.com", statusPush.getUrl());
-        assertNull( statusPush.getUsername());
-        assertNull( statusPush.getPassword());
+        assertNull(statusPush.getUsername());
+        assertNull(statusPush.getPassword());
         assertEquals(AuthenticationMethod.NONE, statusPush.getAuthenticationMethod());
     }
 

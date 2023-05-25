@@ -1,7 +1,6 @@
 package com.retarus.fax.base.sendfax;
 
 import com.retarus.fax.base.common.Property;
-import com.retarus.fax.base.sendfax.FaxRecipient;
 import com.retarus.fax.exception.ApiException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

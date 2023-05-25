@@ -1,7 +1,6 @@
 package com.retarus.fax.base.bulkoperation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.retarus.fax.base.bulkoperation.FaxBulkOperation;
 import com.retarus.fax.base.common.HttpMethod;
 import com.retarus.fax.exception.ApiException;
 import org.json.JSONException;
@@ -22,7 +21,8 @@ class FaxBulkOperationTest {
     @Test
     @DisplayName("Test builder with varargs")
     void testConstructorWithVarargs() {
-        FaxBulkOperation faxBulkOperation = FaxBulkOperation.builder().action(HttpMethod.DELETE).jobIds("6789", "1011").build();
+        FaxBulkOperation faxBulkOperation = FaxBulkOperation.builder().action(HttpMethod.DELETE).jobIds("6789", "1011")
+                .build();
 
 
         assertEquals(HttpMethod.DELETE, faxBulkOperation.getAction());
@@ -76,7 +76,6 @@ class FaxBulkOperationTest {
     }
 
 
-
     @Test
     @DisplayName("Test sample bulk operation serialization to JSON")
     void test() throws JSONException {
@@ -92,7 +91,6 @@ class FaxBulkOperationTest {
                         "FJJ5WA253505ZZBIELEKRC",
                         "FJJ5WA24GI0BRN8TPSWAVM")
                 .build();
-
 
 
         // Create an instance of the ObjectMapper class

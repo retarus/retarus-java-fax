@@ -1,0 +1,59 @@
+{
+  "reports": [
+    {
+      "jobId": "FJLI3102O5BEPYOTB5LPC9",
+      "recipientStatus": [
+        {
+          "number": "+4900000000",
+          "alternativeNumbers": null,
+          "properties": [
+            {
+              "key": "FromName",
+              "value": "Sales Engineering Department"
+            },
+            {
+              "key": "FromCompanyName",
+              "value": "retarus, Inc."
+            },
+            {
+              "key": "FromTelNum",
+              "value": "1-855-462-0839"
+            },
+            {
+              "key": "ToName",
+              "value": "Matthias"
+            },
+            {
+              "key": "ToCompanyName",
+              "value": "ABC Company"
+            },
+            {
+              "key": "ToFaxNum",
+              "value": "1-202-827-2391"
+            },
+            {
+              "key": "SubjectTitle",
+              "value": "Test Fax using REST API"
+            },
+            {
+              "key": "SubjectText",
+              "value": "This is a test fax for Matthias"
+            }
+          ],
+          "status": "REM_DIS",
+          "reason": "simulated",
+          "sentTs": "2023-05-25T11:03:39Z",
+          "durationInSecs": 42,
+          "sentToNumber": "004900000000",
+          "remoteCsid": ""
+        }
+      ],
+      "pages": 2,
+      "reference": {
+        "customerDefinedId": "2018-08-7T11:04:37.057Z_customerDefinedId",
+        "billingCode": "2018-08-7T11:04:37.057Z_billingCode",
+        "billingInfo": "2018-08-7T11:04:37.057Z_billingInfo"
+      }
+    }
+  ]
+}

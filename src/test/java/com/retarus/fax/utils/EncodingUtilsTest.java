@@ -1,7 +1,7 @@
 package com.retarus.fax.utils;
 
-import com.retarus.fax.utils.EncodingUtils;
 import org.junit.jupiter.api.Test;
+
 import java.util.Base64;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -33,7 +33,7 @@ class EncodingUtilsTest {
     void testEncodeCredentialsToStringWithNullStrings() {
         String username = null;
         String password = null;
-        String expected = Base64.getEncoder().encodeToString((null+":"+null).getBytes());
+        String expected = Base64.getEncoder().encodeToString((null + ":" + null).getBytes());
         String result = EncodingUtils.encodeCredentialsToString(username, password);
         assertNotNull(result);
         assertEquals(expected, result);

@@ -1,6 +1,5 @@
 package com.retarus.fax.base.sendfax.rendering;
 
-import com.retarus.fax.base.sendfax.rendering.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

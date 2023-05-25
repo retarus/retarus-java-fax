@@ -1,9 +1,5 @@
 package com.retarus.fax.base.sendfax;
 
-import com.retarus.fax.base.sendfax.Document;
-import com.retarus.fax.base.sendfax.FaxRecipient;
-import com.retarus.fax.base.sendfax.FaxRequest;
-import com.retarus.fax.base.sendfax.Reference;
 import com.retarus.fax.base.sendfax.metadata.Metadata;
 import com.retarus.fax.base.sendfax.rendering.OverlayMode;
 import com.retarus.fax.base.sendfax.rendering.RenderingOptions;

@@ -1,18 +1,16 @@
 package com.retarus.fax.base.sendfax.status;
 
-import com.retarus.fax.base.sendfax.status.FaxImageFormat;
-import com.retarus.fax.base.sendfax.status.FaxImageMode;
-import com.retarus.fax.base.sendfax.status.ReportMail;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReportMailTest {
 
     @Test
     @DisplayName("Test builder method")
-     void testBuilder() {
+    void testBuilder() {
         ReportMail reportMail = ReportMail.builder()
                 .successAddress("success@example.com")
                 .failureAddress("failure@example.com")
@@ -31,7 +29,7 @@ class ReportMailTest {
 
     @Test
     @DisplayName("Test equals and hashcode methods")
-     void testHashCode() {
+    void testHashCode() {
 
         ReportMail reportMail = ReportMail.builder()
                 .successAddress("success@example.com")
@@ -53,7 +51,7 @@ class ReportMailTest {
 
     @Test
     @DisplayName("Test equals method")
-     void testNullScenario() {
+    void testNullScenario() {
         assertDoesNotThrow(() -> {
             ReportMail.builder()
                     .successAddress(null)

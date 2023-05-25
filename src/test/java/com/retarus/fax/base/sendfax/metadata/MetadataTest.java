@@ -1,7 +1,5 @@
 package com.retarus.fax.base.sendfax.metadata;
 
-import com.retarus.fax.base.sendfax.metadata.JobValidation;
-import com.retarus.fax.base.sendfax.metadata.Metadata;
 import com.retarus.fax.exception.ApiException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

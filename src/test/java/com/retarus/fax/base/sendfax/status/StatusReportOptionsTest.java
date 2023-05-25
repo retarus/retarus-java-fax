@@ -1,6 +1,5 @@
 package com.retarus.fax.base.sendfax.status;
 
-import com.retarus.fax.base.sendfax.status.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

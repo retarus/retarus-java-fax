@@ -29,23 +29,36 @@ class FaxRequestToJSONTest {
     void test() throws JSONException {
 
         FaxRequest faxRequest = FaxRequest.builder()
-                .reference(Reference.builder().customerDefinedId("2015-08-07T11:04:37.057Z_customerDefinedId_testSerializesToJSON")
+                .reference(Reference.builder()
+                        .customerDefinedId("2015-08-07T11:04:37.057Z_customerDefinedId_testSerializesToJSON")
                         .billingCode("2015-08-07T11:04:37.057Z_billingCode_testSerializesToJSON")
                         .billingInfo("2015-08-07T11:04:37.057Z_billingInfo_testSerializesToJSON")
                         .build())
-                .faxRecipients(FaxRecipient.builder().faxNumber("004989312000000000").property("key123", "value123").build(),
+                .faxRecipients(FaxRecipient.builder().faxNumber("004989312000000000").property("key123", "value123")
+                                .build(),
                         FaxRecipient.builder().faxNumber("0049893120000000002").property("key123", "value123").build())
                 .documents(
-                        Document.builder().filename("test-document-withReference.txt").referenceURL("http://retarus.com/junit-test").build(),
-                        Document.builder().filename("test-document-inline-byte.txt").data("SGVsbG8sIHRoaXMgaXMgYSB0ZXN0aW5nIGRvY3VtZW50IGJvZHkgY3JlYXRlZCBmb3IgOTk5OTlURQ==").build())
-                .transportOptions(TransportOptions.builder().csid("csid-test").isExpress(true).isDenyListed(false).build())
-                .renderingOptions(RenderingOptions.builder().paperFormat(PaperFormat.A4).paperResolution(PaperResolution.HIGH).coverPageTemplate("coverpage-default.ftl.html").header("%tz=CEST Testfax: CSID: %C Empfaengernummer: %# Datum: %d.%m.%Y %H:%M %z").build())
+                        Document.builder().filename("test-document-withReference.txt")
+                                .referenceURL("http://retarus.com/junit-test").build(),
+                        Document.builder().filename("test-document-inline-byte.txt")
+                                .data("SGVsbG8sIHRoaXMgaXMgYSB0ZXN0aW5nIGRvY3VtZW50IGJvZHkgY3JlYXRlZCBmb3IgOTk5OTlURQ==")
+                                .build())
+                .transportOptions(TransportOptions.builder().csid("csid-test").isExpress(true).isDenyListed(false)
+                        .build())
+                .renderingOptions(RenderingOptions.builder().paperFormat(PaperFormat.A4)
+                        .paperResolution(PaperResolution.HIGH).coverPageTemplate("coverpage-default.ftl.html")
+                        .header("%tz=CEST Testfax: CSID: %C Empfaengernummer: %# Datum: %d.%m.%Y %H:%M %z").build())
                 .statusReportOptions(
                         StatusReportOptions.builder()
-                                .reportMail(ReportMail.builder().successAddress("thiago.nunes@retarus.pt").failureAddress("thiago.nunes@retarus.pt").attachedFaxImageFormat(FaxImageFormat.PDF).attachedFaxImageMode(FaxImageMode.ALWAYS).build())
-                                .statusPush(StatusPush.builder().url("http://retarus.com/junit-test/testSerializesToJSON").build())
+                                .reportMail(ReportMail.builder().successAddress("thiago.nunes@retarus.pt")
+                                        .failureAddress("thiago.nunes@retarus.pt")
+                                        .attachedFaxImageFormat(FaxImageFormat.PDF)
+                                        .attachedFaxImageMode(FaxImageMode.ALWAYS).build())
+                                .statusPush(StatusPush.builder()
+                                        .url("http://retarus.com/junit-test/testSerializesToJSON").build())
                                 .build())
-                .metadata(Metadata.builder().customerReference("12345").jobValidation("2015-08-07T13:04:37.107Z", "2015-08-07T14:04:37.107Z").build())
+                .metadata(Metadata.builder().customerReference("12345")
+                        .jobValidation("2015-08-07T13:04:37.107Z", "2015-08-07T14:04:37.107Z").build())
                 .build();
 
 
