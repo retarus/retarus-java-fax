@@ -23,12 +23,12 @@ To install the SDK, you can either download the source code and build it yoursel
 <dependency>
   <groupId>com.retarus.fax</groupId>
   <artifactId>retarus-java-fax</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
 </dependency> 
 ```
 or Gradle:
 ```groovy
-implementation 'com.retarus.fax:retarus-java-fax:1.0' 
+implementation 'com.retarus.fax:retarus-java-fax:1.0.1' 
 ```
 If you want to build the .jar file yourself, you can clone the repository and build it using Maven:
 ```shell
